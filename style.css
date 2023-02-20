@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.user-add {
+  width: 50%;
+}
+input[type="text"],
+input[type="password"] {
+  width: 600px;
+  height: 40px;
+  margin: 8px 0;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 7px;
+}
+input[type="text"]:focus {
+  border: 1px double rgb(0, 60, 171);
+  border-bottom: 3px solid rgb(142, 199, 0);
+}
+input[type="password"]:focus {
+  border: 1px double rgb(0, 8, 165);
+  border-bottom: 3px solid rgb(142, 199, 0);
+}
+
+.focus {
+  border: 3px solid rgb(79, 107, 245);
+  box-shadow: 1px 1px 8px 0 rgb(79, 107, 245);
+}
+.error {
+  border: 3px solid rgb(240, 35, 35);
+  box-shadow: 1px 1px 8px 0 rgb(240, 35, 35);
+}
+
+.user-btn,
+.user-edit-btn {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid rgb(11, 131, 11);
+  border-radius: 5px;
+  color: rgb(11, 131, 11);
+  font-size: 18px;
+}
+.user-btn:hover,
+.user-edit-btn:hover {
+  cursor: pointer;
+  background-color: rgb(11, 131, 11);
+  color: white;
+}
+.activ {
+  box-shadow: 0px 1px 3px 2px rgb(11 131 11);
+}
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.edit-btn {
+  background-color: rgb(255, 208, 0);
+  border: 1px solid rgb(226, 186, 6);
+  color: rgb(8, 8, 8);
+}
+.edit-btn:hover {
+  background-color: rgb(243, 182, 13);
+}
+.delete-btn {
+  background-color: rgb(252, 19, 19);
+  border: 1px solid rgb(221, 19, 19);
+  color: rgb(255, 255, 255);
+}
+.delete-btn:hover {
+  background-color: rgb(216, 25, 25);
+}
+
+table,
+tr,
+th {
+  margin: 20px 0 0 30px;
+  border-top: 3px solid rgb(34, 193, 195);
+  border-bottom: 3px solid rgb(34, 193, 195);
+  border-collapse: collapse;
+  padding: 20px;
+}
+td {
+  padding: 10px;
+}

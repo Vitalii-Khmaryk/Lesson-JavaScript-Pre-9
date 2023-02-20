@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js pre 9</title>
+    <style>
+      .conteiner {
+        display: flex;
+        justify-content: space-around;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .blockForma {
+        width: 45%;
+        height: 400px;
+      }
+      .top-block {
+        width: 100%;
+        height: 60px;
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 2px solid gray;
+        border-top: 1px solid gray;
+      }
+      table {
+        width: 100%;
+        margin-top: 40px;
+        text-align: left;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="blockForma">
+        <form class="user-add" name="user">
+          <p>Login</p>
+          <input type="text" class="user-login" placeholder="Enter login" />
+          <p>Password</p>
+          <input
+            type="password"
+            class="user-password"
+            placeholder="Enter password"
+          />
+          <p>Email address</p>
+          <input type="text" class="user-email" placeholder="Enter email" />
+          <input type="button" class="user-btn" value="Add user" disabled />
+          <input
+            type="button"
+            class="user-edit-btn"
+            value="Edit user"
+            disabled
+            hidden
+          />
+        </form>
+      </div>
+      <div class="tablo">
+        <table>
+          <thead>
+            <tr>
+              <th class="trHead">#</th>
+              <th class="trHead">Login</th>
+              <th class="trHead">Password</th>
+              <th class="trHead">Email</th>
+              <th class="trHead">Edit</th>
+              <th class="trHead">Delete</th>
+            </tr>
+          </thead>
+          <div class="content" id="tBody">
+            <tbody class="user-list"></tbody>
+          </div>
+        </table>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
